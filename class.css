@@ -19,6 +19,20 @@ header{
     background-color:#C26109 ;
 }
 
+.boton{
+  background-color:#D1C6B1;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.animado {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animado:hover {
+  transform: scale(1.1);
+}
+
 .logo {
   display: flex;
   align-items: center; 
@@ -63,6 +77,7 @@ nav a:hover{
 #check{
   display: none;
 }
+
 
 .slider-box {
     width: 90%;
@@ -163,12 +178,57 @@ nav a:hover{
 
 .img-registrales{
     height: 40px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.img-regis{
+margin-left: 50px;
+  height: 40px;
+}
+
+.img-regi{
+  margin-right: 50px;
+    height: 40px;
+  }
+
+.img-regist{
+  margin-right: 65px;
+    height: 40px;
+  }
+
+.cont{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.conte{
+  display: flex;
+}
+
+.sec{
+  flex:1;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.cuadro-lateral{
+  background-color: #b38f6e;
+  border: 2px solid black;
+  border-radius: 4px;
+  height: auto;
+  width: 100%;
+  padding: 35px;
 }
 
 .titulo-registral{
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    display: block;
+    margin:0 auto;
+    color: #C26109 !important;
 }
+
 
 .contenedor{
     background-color: #C26109;
