@@ -19,10 +19,53 @@ header{
     background-color:#C26109 ;
 }
 
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+  }
+} 
+
 .boton{
   background-color:#D1C6B1;
   margin-left: 40px;
   margin-bottom: 10px;
+}
+
+.botonyoutu{
+  background-color: #D1C6B1;
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-align: center;
+ 
 }
 
 .animado {
@@ -119,6 +162,39 @@ nav a:hover{
     height: 1000px;
 }
 
+.entrada{
+  opacity: 0; /* Configura la opacidad inicial */
+  transform: translateY(-20px); /* Configura la posición inicial */
+  animation: entradaAnimacion 5.0s ease-out forwards; /* Aplica la animación */
+}
+
+@keyframes entradaAnimacion{
+  
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  
+}
+
+.icono{
+  transition: transform 0.4s ease;
+}
+
+.icono:hover{
+  transform: translateY(-10px);
+}
+
+.te{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: black;
+
+}
+
+.imgo{
+  height: 33px;
+  width: 33px;
+}
+
 .texto p{
     font-family: 'Times New Roman', Times, serif;
     padding: auto;
@@ -167,6 +243,12 @@ nav a:hover{
 }
 
 
+.img-youtube{
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
 
 .tramites-registrales{
     width: 95%;
@@ -221,6 +303,7 @@ margin-left: 50px;
   padding: 35px;
 }
 
+
 .titulo-registral{
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -245,6 +328,22 @@ margin-left: 50px;
     padding-top: 35px;
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.youtube{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 35px auto;
+  padding-top: 35px;
+  color: #BD1A0C;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.youtube-conte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mapas{
